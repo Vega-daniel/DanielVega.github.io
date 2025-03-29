@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Vega - Data Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f4f4f4, #e0e8f0);
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+            color: #35424a;
+            border-bottom: 2px solid #35424a;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .job, .edu {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .job:hover, .edu:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .job h3, .edu h3 {
+            margin: 0;
+            color: #35424a;
+        }
+        .job p, .edu p {
+            margin: 5px 0;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daniel Vega</h1>
+            <p>Data Scientist | Oakland, CA</p>
+            <p>Email: danielevaristovega@gmail.com | LinkedIn: linkedin.com/in/1danielvega | Languages: English, Spanish</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="skills">
+            <h2>Technical Skills & Languages</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python (Pandas, Numpy), SQL, scikit-learn, Databricks, TensorFlow 2.0, HuggingFace, SAS EG</li>
+                <li><strong>Visualizations:</strong> Tableau, Matplotlib</li>
+                <li><strong>Supervised Learning:</strong> Linear / Logistic Regression, Random Forests, Gradient Boosting, K-Nearest Neighbors</li>
+                <li><strong>Unsupervised Learning:</strong> K-Means, Neural Networks, Natural Language Processing</li>
+                <li><strong>Languages:</strong> English, Spanish</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Career Development</h2>
+            <div class="job">
+                <h3>Kaiser Foundation Hospital Plan Inc | Data Scientist IV</h3>
+                <p>Oakland, CA | August 2019 - Present</p>
+                <ul>
+                    <li>Created a Machine Learning Model to identify High Utilizers for CalAIM initiatives, in production since 2022, with a data pipeline and Tableau dashboard.</li>
+                    <li>Built a New Member Onboarding Dashboard tracking 18 KPIs for Medi-Cal Members.</li>
+                    <li>Developed a dashboard for Non-Member Emergency Department Visits to prioritize health plan discussions.</li>
+                    <li>Built a Northern California Autism population dashboard with multiple analytical tabs.</li>
+                    <li><strong>Technologies:</strong> SAS EG, SQL, Hadoop, Python, Gradient Boosting, Tableau</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Galvanize | Data Science</h3>
+                <p>San Francisco, CA | March 2019 - August 2019</p>
+                <ul>
+                    <li>Built a Personality Predictor using NLP and deployed it as an interactive JS website.</li>
+                    <li>Developed a Tesla API program for vehicle data extraction.</li>
+                    <li>Analyzed churn data with machine learning to provide recommendations.</li>
+                    <li><strong>Technologies:</strong> Python, NLP, TensorFlow 2.0, AWS, JS, HTML, Tableau</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Tesla Inc | Associate Manager of Powertrain</h3>
+                <p>Fremont, CA | September 2017 - March 2019</p>
+                <ul>
+                    <li>Created Tableau dashboards from CMMS data to track KPIs and improve performance.</li>
+                    <li>Increased PM completion from 72% to 99%, reducing downtime by 23%.</li>
+                    <li>Led technician training and development initiatives.</li>
+                    <li><strong>Technologies:</strong> Tableau, SQL</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Lawrence Livermore National Laboratory | Senior Electronics Technologist</h3>
+                <p>Livermore, CA | October 2016 - August 2017</p>
+                <ul>
+                    <li>Supported the Stockpile Stewardship Program with diagnostic equipment development.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Tesla Motors | Equipment Maintenance Supervisor</h3>
+                <p>Fremont, CA | May 2012 - October 2016</p>
+                <ul>
+                    <li>Improved team performance, making it the highest-output shift in 6 months.</li>
+                    <li>Developed maintenance schedules and training blueprints for technicians.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu">
+                <h3>Galvanize | Certificate, Data Science Immersive Program</h3>
+                <p>San Francisco, CA | 2019</p>
+            </div>
+            <div class="edu">
+                <h3>DeVry University | BS, Electronics Engineering Technology</h3>
+                <p>Fremont, CA | 2007</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Scroll animation for sections
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
